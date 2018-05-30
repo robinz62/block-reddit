@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Block Reddit",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "css": ["block.css"],
+      "js": ["block.js"]
+    }
+  ],
+  "description": "Blocks content on any reddit.com domain",
+  "icons": {
+    "16": "images/no_reddit16.png",
+    "32": "images/no_reddit32.png",
+    "48": "images/no_reddit48.png",
+    "128": "images/no_reddit128.png"
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "images/no_reddit16.png",
+      "32": "images/no_reddit32.png",
+      "48": "images/no_reddit48.png",
+      "128": "images/no_reddit128.png"
+    }
+  }
+}
